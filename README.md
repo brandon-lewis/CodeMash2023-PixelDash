@@ -1,6 +1,6 @@
 # Build Your First 2D Game with Godot - CodeMash 2022
 
-Listed below are the required tools and art assets required to attend this session.
+Listed below are the required tools and art assets required to attend this session. Once you've downloaded Godot and the art assets, you are ready to go! There are no additional build steps or setup requirements beyond downloading.
 
 ## 1) Download Godot
 Download Godot for free at: https://godotengine.org/download
