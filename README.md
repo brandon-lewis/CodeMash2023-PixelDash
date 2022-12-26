@@ -9,7 +9,7 @@ Download Godot for free at: https://godotengine.org/download
 
 SourceForge Mirror (a backup in case the Godot website is inaccessible): https://sourceforge.net/projects/godot-engine.mirror/
 
-Godot is also available on Steam (not recommended due to automatic Major version updates and shift+tab causing Steam overlay, but worth pointing out as an option)
+Godot is also available on Steam. This is not recommended as Steam may push automatic Major version updates, and some commonly-used shortcuts may trigger the Steam overlay. Even so, it's worth pointing out that the engine is avaiable on Steam.
 
 ## 2) Download visual and audio Assets
 This repo contains an ArtAssets and AudioAssets folder, each containing some zip files for the sounds and graphics that we will be using to create our game. All assets are CC0 and totally free to use.
