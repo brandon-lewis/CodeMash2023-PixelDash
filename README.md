@@ -4,7 +4,7 @@ Listed below are the required tools and art assets required to attend this sessi
 
 Once you've downloaded Godot and the art assets, you are ready to go! There are no additional build steps or setup requirements beyond downloading.
 
-## 1) Download Godot
+## 1) Download Godot Engine
 Download Godot for free at: https://godotengine.org/download
 
 SourceForge Mirror (a backup in case the Godot website is inaccessible): https://sourceforge.net/projects/godot-engine.mirror/
