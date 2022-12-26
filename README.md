@@ -10,16 +10,6 @@ SourceForge Mirror: https://sourceforge.net/projects/godot-engine.mirror/
 Godot is also available on Steam (not recommended due to automatic Major version updates and shift+tab causing Steam overlay, but worth pointing out as an option)
 
 ## 2) Download visual and audio Assets
-These are the free and CC0 art and audio assets that we will be using to create our game.
+This repo contains an ArtAssets and AudioAssets folder, each containing some zip files for the sounds and graphics that we will be using to create our game. All assets are CC0 and totally free to use.
 
-- Pixel Adventure 1:
-    https://pixelfrog-assets.itch.io/pixel-adventure-1
-
-- Pixel Adventure 2:
-    https://pixelfrog-assets.itch.io/pixel-adventure-2
-
-- Casual Game Vol 2:
-    https://zakiro101.itch.io/free-casual-game-music-pack-vol-2
-
-- jdwasabi_Sounds:
-    https://jdwasabi.itch.io/8-bit-16-bit-sound-effects-pack
+For your reference, the resources.txt file at the root of this repo contains links to itch.io where each asset was downloaded.
