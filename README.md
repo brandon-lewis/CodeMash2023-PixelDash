@@ -7,7 +7,7 @@ Once you've downloaded Godot and the art assets, you are ready to go! There are 
 ## 1) Download Godot
 Download Godot for free at: https://godotengine.org/download
 
-SourceForge Mirror: https://sourceforge.net/projects/godot-engine.mirror/
+SourceForge Mirror (a backup in case the Godot website is inaccessible): https://sourceforge.net/projects/godot-engine.mirror/
 
 Godot is also available on Steam (not recommended due to automatic Major version updates and shift+tab causing Steam overlay, but worth pointing out as an option)
 
