@@ -15,3 +15,8 @@ Godot is also available on Steam. This is not recommended as Steam may push auto
 This repo contains an ArtAssets and AudioAssets folder, each containing some zip files for the sounds and graphics that we will be using to create our game. All assets are CC0 and totally free to use.
 
 For your reference, the resources.txt file at the root of this repo contains links to itch.io where each asset was downloaded.
+
+You will also want to download the PixelDash.ttf font file for UI work later in the workshop.
+
+## 3) Grab the Slides!
+This is a lengthy workshop with detailed step-by-step slides identifying what we're doing at each step and why.
