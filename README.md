@@ -19,4 +19,4 @@ For your reference, the resources.txt file at the root of this repo contains lin
 You will also want to download the PixelDash.ttf font file for UI work later in the workshop.
 
 ## 3) Grab the Slides!
-This is a lengthy workshop with detailed step-by-step slides identifying what we're doing at each step and why.
+This is a lengthy workshop with detailed step-by-step slides identifying what we're doing at each step and why. Be warned; the slides are chonky!
