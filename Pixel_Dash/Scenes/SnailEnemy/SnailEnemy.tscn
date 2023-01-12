@@ -1,0 +1,109 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Assets/Art/Pixel Adventure 2/Enemies/Snail/Walk (38x24).png" type="Texture" id=3]
+[ext_resource path="res://Scenes/SnailEnemy/SnailEnemy.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Audio/jdwasabi_Sounds/Hit damage 1.wav" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Art/Pixel Adventure 2/Enemies/Snail/Shell Idle (38x24).png" type="Texture" id=7]
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 3 )
+region = Rect2( 38, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 3 )
+region = Rect2( 76, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 3 )
+region = Rect2( 114, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 3 )
+region = Rect2( 152, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 3 )
+region = Rect2( 190, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 3 )
+region = Rect2( 228, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 3 )
+region = Rect2( 266, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 3 )
+region = Rect2( 304, 0, 38, 24 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 3 )
+region = Rect2( 342, 0, 38, 24 )
+
+[sub_resource type="SpriteFrames" id=31]
+animations = [ {
+"frames": [ SubResource( 44 ) ],
+"loop": false,
+"name": "defeated",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ],
+"loop": true,
+"name": "walk",
+"speed": 20.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=32]
+extents = Vector2( 14, 1 )
+
+[sub_resource type="RectangleShape2D" id=45]
+extents = Vector2( 15, 8 )
+
+[sub_resource type="RectangleShape2D" id=33]
+extents = Vector2( 2.5, 9 )
+
+[node name="SnailEnemy" type="KinematicBody2D"]
+script = ExtResource( 4 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( -15, -10 )
+enabled = true
+cast_to = Vector2( 0, 20 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -12 )
+frames = SubResource( 31 )
+animation = "defeated"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1, -1 )
+shape = SubResource( 32 )
+
+[node name="HitArea2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea2D"]
+position = Vector2( 1, -8 )
+shape = SubResource( 45 )
+
+[node name="ShellArea2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShellArea2D"]
+position = Vector2( 3, -18 )
+rotation = 1.5708
+shape = SubResource( 33 )
+
+[node name="HitAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[connection signal="body_entered" from="HitArea2D" to="." method="_on_HitArea2D_body_entered"]
+[connection signal="body_entered" from="ShellArea2D" to="." method="_on_ShellArea2D_body_entered"]
