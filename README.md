@@ -7,9 +7,11 @@ Once you've downloaded Godot and the art assets, you are ready to go! There are 
 ## 1) Download Godot Engine (version 3.5)
 Download Godot for free at: https://godotengine.org/download
 
-<hr/>
-*Note:* Godot 4 has been released! Version 4 is very different from 3.5 and the content of this workshop is no longer valid in 4.0+. If you wish to follow along with this workshop, you will need to ensure that you're using Godot 3.5.
-<hr/>
+----
+
+Godot 4 has been released! Version 4 is very different from 3.5 and the content of this workshop is no longer valid in 4.0+. If you wish to follow along with this workshop, you will need to ensure that you're using Godot 3.5.
+
+----
 
 SourceForge Mirror (a backup in case the Godot website is inaccessible): https://sourceforge.net/projects/godot-engine.mirror/
 
